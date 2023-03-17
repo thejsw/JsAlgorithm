@@ -1,3 +1,6 @@
 function solution(money) {
-    return [(Math.floor(money / 5500)), (money % 5500)]
+    return [Math.trunc((money / 5500)), (money % 5500)]
 }
+
+// Math.floor === Math.trunc
+// parseInt
