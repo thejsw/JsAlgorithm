@@ -1,11 +1,14 @@
 function solution(age) {
-    let newArr = String(age).split('')
+    return String(age).split('')
     .map(v => Number(v) + 97)
     .map(v => String.fromCodePoint(v))
+    .join('')
     
-    let result = ''
-    newArr.map(v => result += v)
-    return result
+    // return newArr
+    // let result = ''
+    // newArr.map(v => result += v)
+    // return result
+    // return newArr.reduce((arr, cur) => {cur}, '')
 }
 
 // 한 자리씩 나누기 V
