@@ -1,15 +1,5 @@
 function solution(a, b) {
-    let big = Math.max(a, b)
-    let small = Math.min(a, b)
-    let result = 0
-    
-
-    if (big === small) {
-        return small
-    }
-    else {
-        for (let i=small; i<=big; i++) {
-            result += i
-        }
-    } return result
+    let s = 0;
+    for (let i = Math.min(a, b); i <= Math.max(a, b); i++) s += i;
+    return s;
 }
