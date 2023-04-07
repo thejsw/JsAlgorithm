@@ -1,6 +1,5 @@
 function solution(hp) {
-    let a, b, c
-    [a, b, c] = [Math.floor(hp / 5), Math.floor((hp % 5) / 3), Math.floor((hp % 5) % 3)]
+    const [a, b, c] = [Math.floor(hp / 5), Math.floor((hp % 5) / 3), Math.floor((hp % 5) % 3)]
     return [a, b, c].reduce((arr,cur) => arr += cur, 0)
 }
 
