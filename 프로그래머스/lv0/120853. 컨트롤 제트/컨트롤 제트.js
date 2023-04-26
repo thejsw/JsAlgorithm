@@ -15,6 +15,9 @@ function solution(s) {
         }
     })
     
-    return result.filter((el) => Number(el)).map((el) => Number(el)).reduce((acc, cur) => acc += cur, 0)
+    return result
+        .filter((el) => Number(el))
+        .map((el) => Number(el))
+        .reduce((acc, cur) => acc += cur, 0)
     
 }
