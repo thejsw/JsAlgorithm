@@ -1,20 +1,15 @@
 function solution(sides) {
     let maxNum = Math.max(...sides)
     let minNum = Math.min(...sides)
-    let result1 = 0
-    let result2 = 0
+    let cnt = 0
     
-    for(let i=0; i<=maxNum; i++) {
-        if (i> maxNum - minNum) {
-            result1++
-        }
+    for(let i=maxNum - minNum + 1; i<=maxNum; i++) {
+        cnt++
     }
-    for(let i=maxNum+1; i< minNum + maxNum; i++) {
-        // if (i> maxNum - minNum) {
-            result2++
-        // }
+    for(let i=maxNum + 1; i<minNum + maxNum; i++) {
+        cnt++
     }
-    return result1 + result2
+    return cnt
 }
 
 // [3, 6]
