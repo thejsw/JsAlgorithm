@@ -23,26 +23,13 @@ function solution(polynomial) {
     })
     
     if(xNum !== 0 && num !== 0){
-        if(xNum === 1){
-            return `x + ${num}`;        
-        }
-        
-        return `${xNum}x + ${num}`;    
-    }
+        if(xNum === 1){return `x + ${num}`}
+        return `${xNum}x + ${num}`}
     
     if(xNum !== 0 && num === 0){
-        if(xNum === 1){
-            return "x";
-        }
-        
-        return `${xNum}x`;
-    }
+        if(xNum === 1){return "x"}
+        return `${xNum}x`}
     
-    if(xNum === 0 && num !== 0){
-        return `${num}`;
-    }
-    
-    if(xNum === 0 && num === 0){
-        return "0";
-    }
+    if(xNum === 0 && num !== 0){return `${num}`}
+    if(xNum === 0 && num === 0){return "0"}
 }
